@@ -10,6 +10,7 @@ import (
 
 	"github.com/IABTechLab/adscert/pkg/adscert/api"
 	"github.com/IABTechLab/adscert/pkg/adscert/discovery"
+	"github.com/IABTechLab/adscert/pkg/adscert/logger"
 	"github.com/IABTechLab/adscert/pkg/adscert/signatory"
 	"github.com/benbjohnson/clock"
 )
@@ -118,6 +119,110 @@ func TestVerifyAuthenticatedConnection(t *testing.T) {
 		} else if sign.GetVerificationInfo()[0].GetSignatureDecodeStatus()[0] == api.SignatureDecodeStatus_SIGNATURE_DECODE_STATUS_BODY_AND_URL_VALID {
 		} else {
 			t.Errorf("Signed Object %s", sign)
+		}
+
+	})
+
+}
+
+func TestSignAuthenticatedConnection(t *testing.T) {
+	reqInfo := &api.RequestInfo{}
+	destinationUrl := "http://exchange-pubm.ga:8090/request?param1=example&param2=another"
+	body := "{\"sample\": \"request\"}"
+	err := signatory.SetRequestInfo(reqInfo, destinationUrl, []byte(body))
+	if err != nil {
+		fmt.Errorf("error parsing request info: %v", err)
+		return
+	}
+	origin := "exchange-demo.ga"
+	base64PrivateKeys := signatory.GenerateFakePrivateKeysForTesting(origin)
+
+	signatoryApi := signatory.NewLocalAuthenticatedConnectionsSignatory(
+		origin,
+		crypto_rand.Reader,
+		clock.New(),
+		discovery.NewDefaultDnsResolver(),
+		discovery.NewDefaultDomainStore(),
+		time.Duration(30*time.Second), // domain check interval
+		time.Duration(30*time.Second), // domain renewal interval
+		base64PrivateKeys)
+
+	signatureResponse, err := signatoryApi.SignAuthenticatedConnection(
+		&api.AuthenticatedConnectionSignatureRequest{
+			RequestInfo: reqInfo,
+			Timestamp:   "",
+			Nonce:       "",
+		})
+
+	if err != nil {
+		logger.Warningf("unable to sign message (continuing...): %v", err)
+	}
+	time.Sleep(5 * time.Second)
+	t.Run("VALID=1", func(t *testing.T) {
+
+		signatureResponse, err = signatoryApi.SignAuthenticatedConnection(
+			&api.AuthenticatedConnectionSignatureRequest{
+				RequestInfo: reqInfo,
+				Timestamp:   "",
+				Nonce:       "",
+			})
+		if err != nil {
+			t.Errorf("Error %s", err)
+		} else {
+			logger.Infof(signatory.GetSignatures(signatureResponse)[0])
+			logger.Infof("Requesting URL %s with signature %s", destinationUrl, signatureResponse)
+		}
+
+	})
+
+}
+
+func BenchmarkSignAuthenticatedConnection(b *testing.B) {
+	reqInfo := &api.RequestInfo{}
+	destinationUrl := "http://exchange-pubm.ga:8090/request?param1=example&param2=another"
+	body := "{\"sample\": \"request\"}"
+	err := signatory.SetRequestInfo(reqInfo, destinationUrl, []byte(body))
+	if err != nil {
+		fmt.Errorf("error parsing request info: %v", err)
+		return
+	}
+	origin := "exchange-demo.ga"
+	base64PrivateKeys := signatory.GenerateFakePrivateKeysForTesting(origin)
+
+	signatoryApi := signatory.NewLocalAuthenticatedConnectionsSignatory(
+		origin,
+		crypto_rand.Reader,
+		clock.New(),
+		discovery.NewDefaultDnsResolver(),
+		discovery.NewDefaultDomainStore(),
+		time.Duration(120*time.Second), // domain check interval
+		time.Duration(120*time.Second), // domain renewal interval
+		base64PrivateKeys)
+	signReq := &api.AuthenticatedConnectionSignatureRequest{
+		RequestInfo: reqInfo,
+		Timestamp:   "",
+		Nonce:       "",
+	}
+	signatureResponse, err := signatoryApi.SignAuthenticatedConnection(signReq)
+
+	if err != nil {
+		logger.Warningf("unable to sign message (continuing...): %v", err)
+	}
+	time.Sleep(5 * time.Second)
+	b.Run("VALID=1", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			signReq := &api.AuthenticatedConnectionSignatureRequest{
+				RequestInfo: reqInfo,
+				Timestamp:   "",
+				Nonce:       "",
+			}
+			signatureResponse, err = signatoryApi.SignAuthenticatedConnection(signReq)
+			if err != nil {
+				b.Errorf("Error %s", err)
+			} else {
+				logger.Debugf(signatory.GetSignatures(signatureResponse)[0])
+				logger.Debugf("Requesting URL %s with signature %s", destinationUrl, signatureResponse)
+			}
 		}
 
 	})

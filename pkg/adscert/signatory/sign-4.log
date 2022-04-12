@@ -1,0 +1,47 @@
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+pY3D6qH4YznQPmpkPClD8_10K3aqOqT-3nM4s0r85M0
+2022/04/13 00:37:21 Wrote to wake-up channel.
+2022/04/13 00:37:21 Wrote to wake-up channel.
+2022/04/13 00:37:21 counterparty lookup error
+2022/04/13 00:37:21 manual wake-up from wake-up signal
+2022/04/13 00:37:21 Starting ads.cert update sweep
+2022/04/13 00:37:21 Trying to do an update for domain ssai.tk
+2022/04/13 00:37:22 No record found for _adscert.ssai.tk in 608.565113ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/13 00:37:22 Found records for _delivery._adscert.ssai.tk in 84.14677ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+2022/04/13 00:37:22 manual wake-up from wake-up signal
+2022/04/13 00:37:22 Starting ads.cert update sweep
+2022/04/13 00:37:22 Trying to do an update for domain ssai.tk
+2022/04/13 00:37:22 No record found for _adscert.ssai.tk in 171.698053ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/13 00:37:22 Found records for _delivery._adscert.ssai.tk in 86.09075ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+ukmwuQH5oIjNdSl50k9XlFJb-ShoX6d2shs-KTXPDsA
+2022/04/13 00:37:26 Wrote to wake-up channel.
+2022/04/13 00:37:26 manual wake-up from wake-up signal
+2022/04/13 00:37:26 Starting ads.cert update sweep
+2022/04/13 00:37:26 Wrote to wake-up channel.
+2022/04/13 00:37:26 counterparty lookup error
+2022/04/13 00:37:26 Trying to do an update for domain exchange-pubm.ga
+2022/04/13 00:37:26 No record found for _adscert.exchange-pubm.ga in 144.18281ms: lookup _adscert.exchange-pubm.ga on 8.8.8.8:53: no such host
+2022/04/13 00:37:26 Found records for _delivery._adscert.exchange-pubm.ga in 84.206451ms: [v=adcrtd k=x25519 h=sha256 p=4U1O8MMS2otLWm9QJsgMHe0c-5vj2Tx8FUXAFy3GAFU]
+2022/04/13 00:37:26 manual wake-up from wake-up signal
+2022/04/13 00:37:26 Starting ads.cert update sweep
+2022/04/13 00:37:26 Trying to do an update for domain exchange-pubm.ga
+2022/04/13 00:37:27 No record found for _adscert.exchange-pubm.ga in 563.697139ms: lookup _adscert.exchange-pubm.ga on 8.8.8.8:53: no such host
+2022/04/13 00:37:27 Found records for _delivery._adscert.exchange-pubm.ga in 83.986606ms: [v=adcrtd k=x25519 h=sha256 p=4U1O8MMS2otLWm9QJsgMHe0c-5vj2Tx8FUXAFy3GAFU]
+2022/04/13 00:37:31 from=exchange-demo.ga&from_key=4U1O8M&invoking=exchange-pubm.ga&nonce=l0QXrh9mOK2z&status=1&timestamp=220412T190731&to=exchange-pubm.ga&to_key=4U1O8M; sigb=NQR8-UyLIutX&sigu=ZPFU56ubwgnk
+2022/04/13 00:37:31 Requesting URL http://exchange-pubm.ga:8090/request?param1=example&param2=another with signature signature_operation_status:SIGNATURE_OPERATION_STATUS_OK  request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=exchange-demo.ga&from_key=4U1O8M&invoking=exchange-pubm.ga&nonce=l0QXrh9mOK2z&status=1&timestamp=220412T190731&to=exchange-pubm.ga&to_key=4U1O8M; sigb=NQR8-UyLIutX&sigu=ZPFU56ubwgnk"  signing_status:"1"  from_domain:"exchange-demo.ga"  from_key:"4U1O8M"  invoking_domain:"exchange-pubm.ga"  to_domain:"exchange-pubm.ga"  to_key:"4U1O8M"}}
+ukmwuQH5oIjNdSl50k9XlFJb-ShoX6d2shs-KTXPDsA
+2022/04/13 00:37:31 Wrote to wake-up channel.
+2022/04/13 00:37:31 Didn't write to wake-up channel since there's a request pending
+2022/04/13 00:37:31 counterparty lookup error
+2022/04/13 00:37:31 manual wake-up from wake-up signal
+2022/04/13 00:37:31 Starting ads.cert update sweep
+2022/04/13 00:37:31 Trying to do an update for domain exchange-pubm.ga
+2022/04/13 00:37:32 No record found for _adscert.exchange-pubm.ga in 638.931899ms: lookup _adscert.exchange-pubm.ga on 8.8.8.8:53: no such host
+2022/04/13 00:37:32 Found records for _delivery._adscert.exchange-pubm.ga in 85.155294ms: [v=adcrtd k=x25519 h=sha256 p=4U1O8MMS2otLWm9QJsgMHe0c-5vj2Tx8FUXAFy3GAFU]
+goos: darwin
+goarch: amd64
+pkg: github.com/IABTechLab/adscert/pkg/adscert/signatory
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkSignAuthenticatedConnection/VALID=1-4         	   10000	    137269 ns/op
+PASS
+ok  	github.com/IABTechLab/adscert/pkg/adscert/signatory	17.063s
