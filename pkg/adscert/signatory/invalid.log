@@ -1,0 +1,55 @@
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+pY3D6qH4YznQPmpkPClD8_10K3aqOqT-3nM4s0r85M0
+2022/04/12 17:29:41 Wrote to wake-up channel.
+2022/04/12 17:29:41 Didn't write to wake-up channel since there's a request pending
+2022/04/12 17:29:41 counterparty lookup error
+2022/04/12 17:29:41 manual wake-up from wake-up signal
+2022/04/12 17:29:41 Starting ads.cert update sweep
+2022/04/12 17:29:41 Trying to do an update for domain ssai.tk
+2022/04/12 17:29:42 No record found for _adscert.ssai.tk in 638.836854ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/12 17:29:43 Found records for _delivery._adscert.ssai.tk in 620.069842ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+pY3D6qH4YznQPmpkPClD8_10K3aqOqT-3nM4s0r85M0
+2022/04/12 17:29:46 Wrote to wake-up channel.
+2022/04/12 17:29:46 Didn't write to wake-up channel since there's a request pending
+2022/04/12 17:29:46 counterparty lookup error
+2022/04/12 17:29:46 manual wake-up from wake-up signal
+2022/04/12 17:29:46 Starting ads.cert update sweep
+2022/04/12 17:29:46 Trying to do an update for domain ssai.tk
+2022/04/12 17:29:47 No record found for _adscert.ssai.tk in 180.803265ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/12 17:29:47 Found records for _delivery._adscert.ssai.tk in 90.250133ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+pY3D6qH4YznQPmpkPClD8_10K3aqOqT-3nM4s0r85M0
+2022/04/12 17:29:51 Wrote to wake-up channel.
+2022/04/12 17:29:51 manual wake-up from wake-up signal
+2022/04/12 17:29:51 Starting ads.cert update sweep
+2022/04/12 17:29:51 Wrote to wake-up channel.
+2022/04/12 17:29:51 counterparty lookup error
+2022/04/12 17:29:51 Trying to do an update for domain ssai.tk
+2022/04/12 17:29:52 No record found for _adscert.ssai.tk in 167.493994ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/12 17:29:52 Found records for _delivery._adscert.ssai.tk in 82.299136ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+2022/04/12 17:29:52 manual wake-up from wake-up signal
+2022/04/12 17:29:52 Starting ads.cert update sweep
+2022/04/12 17:29:52 Trying to do an update for domain ssai.tk
+2022/04/12 17:29:52 No record found for _adscert.ssai.tk in 588.318561ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/12 17:29:52 Found records for _delivery._adscert.ssai.tk in 91.044308ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+request_info:{invoking_domain:"exchange-pubm.ga"  url_hash:"\xa1y\xa7`2(\xf0 Θ\x8aɁ\xe7t?\x1a\xa7b\xf9FDG\x1c-\x97#\x90:\x04Kn"  body_hash:"Z\xf9\x11\xfd\x1a\xc7{w\xe5\xf8Q\x18ѯ\xca\xef\x84K\x01\xfb\xaf,\xc3\x1d\xe1\xa8\xdbBilzX"  signature_info:{signature_message:"from=ssai.tk&from_key=OEUzGd&invoking=exchange-pubm.ga&nonce=rs2dBHHZroMj&status=1&timestamp=220412T094123&to=exchange-pubm.ga&to_key=4U1O8M; sigb=CrBS2Wm5WcBz&sigu=MYNLLXxQmaCS"}}
+pY3D6qH4YznQPmpkPClD8_10K3aqOqT-3nM4s0r85M0
+2022/04/12 17:29:56 Wrote to wake-up channel.
+2022/04/12 17:29:56 Didn't write to wake-up channel since there's a request pending
+2022/04/12 17:29:56 counterparty lookup error
+2022/04/12 17:29:56 manual wake-up from wake-up signal
+2022/04/12 17:29:56 Starting ads.cert update sweep
+2022/04/12 17:29:56 Trying to do an update for domain ssai.tk
+2022/04/12 17:29:57 No record found for _adscert.ssai.tk in 193.191455ms: lookup _adscert.ssai.tk on 8.8.8.8:53: no such host
+2022/04/12 17:29:57 Found records for _delivery._adscert.ssai.tk in 652.770304ms: [v=adcrtd k=x25519 h=sha256 p=OEUzGdBiuwq1KjL2SOk54eChr5aXFSBn2ZL8n5DMT2Y]
+goos: darwin
+goarch: amd64
+pkg: github.com/IABTechLab/adscert/pkg/adscert/signatory
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkVerifyAuthenticatedConnection/VALID=0           	  133737	      8689 ns/op
+BenchmarkVerifyAuthenticatedConnection/VALID=0-2         	  152095	      8258 ns/op
+BenchmarkVerifyAuthenticatedConnection/VALID=0-4         	  160508	      7756 ns/op
+PASS
+ok  	github.com/IABTechLab/adscert/pkg/adscert/signatory	24.979s

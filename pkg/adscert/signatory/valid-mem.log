@@ -1,0 +1,9 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/IABTechLab/adscert/pkg/adscert/signatory
+cpu: Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz
+BenchmarkVerifyAuthenticatedConnection/VALID=1           	  138294	      8673 ns/op	    2672 B/op	      48 allocs/op
+BenchmarkVerifyAuthenticatedConnection/VALID=1-2         	  159420	      7967 ns/op	    2672 B/op	      48 allocs/op
+BenchmarkVerifyAuthenticatedConnection/VALID=1-4         	  156292	      8422 ns/op	    2672 B/op	      48 allocs/op
+PASS
+ok  	github.com/IABTechLab/adscert/pkg/adscert/signatory	24.984s

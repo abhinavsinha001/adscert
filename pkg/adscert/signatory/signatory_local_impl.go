@@ -140,7 +140,7 @@ func (s *LocalAuthenticatedConnectionsSignatory) VerifyAuthenticatedConnection(r
 
 		for _, signatureInfo := range requestInfo.SignatureInfo {
 			decodeStatus := s.checkSingleSignature(requestInfo, signatureInfo)
-			logger.Infof("%v", decodeStatus)
+			logger.Debugf("%v", decodeStatus)
 			verificationInfo.SignatureDecodeStatus = append(verificationInfo.SignatureDecodeStatus, decodeStatus)
 		}
 
